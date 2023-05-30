@@ -11,7 +11,7 @@ def is_odd(x):
 
 
 
-    return x % 2
+    return (x % 2) != 0
 
 
 
@@ -30,3 +30,4 @@ except TypeError:
     has_failed = True
 assert has_failed
 assert is_odd(1) is not None
+assert is_odd(2) is False
